@@ -2,8 +2,7 @@ import java.util.Map;
 
 public class SearchInMap {
 
-    public void searchInMap(Map<String, String> FullFile, String scanStr){
-
+    public void searchInMap(Map<String, String> FullFile, String scanStr) {
         if (FullFile.containsKey(scanStr)) {
             System.out.println(FullFile.get(scanStr));
         } else
@@ -11,8 +10,6 @@ public class SearchInMap {
     }
 
 
-
-
-    }
+}
 
 

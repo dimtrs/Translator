@@ -8,9 +8,8 @@ public class DetectLanguage {
         Matcher m = pattern.matcher(scanStr);
         if (m.find()) {
             return "Ru";
-        }
-        else {
+        } else {
             return "En";
         }
-        }
     }
+}
