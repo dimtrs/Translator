@@ -3,15 +3,12 @@ import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.sql.SQLException;
 
-
 public class AddInDB {
-
     private static final String CREATE_TABLE_QUERY = "CREATE TABLE IF NOT EXISTS Words ("
             + "id INTEGER PRIMARY KEY, "
             + "en TEXT NOT NULL, "
             + "ru TEXT NOT NULL)";
     private static final String INSERT_WORDS_QUERY = "INSERT INTO Words (id, en, ru) VALUES (?, ?, ?)";
-
 
     public static void main(String[] args) {
         ConnectionSQL ConnectionSQL = new ConnectionSQL();

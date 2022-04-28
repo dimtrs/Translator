@@ -11,8 +11,7 @@ public class ConnectionSQL {
         props.setProperty("user", "postgres");
         props.setProperty("password", "787898");
         try {
-            Connection connection = DriverManager.getConnection(DB_URL, props);
-            return connection;
+            return DriverManager.getConnection(DB_URL, props);
         } catch (SQLException e) {
             e.printStackTrace();
         }
